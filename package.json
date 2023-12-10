@@ -1,0 +1,30 @@
+{
+  "name": "@natewilcox/nathan-core",
+  "version": "0.0.1",
+  "description": "Core objects for Nathan's games",
+  "main": "build/main.js",
+  "types": "build/main.d.ts",
+  "files": [
+    "build/**/*"
+  ],
+  "scripts": {
+    "clean": "npx rimraf build && npx rimraf tsconfig.tsbuildinfo",
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "phaser",
+    "game",
+    "scenes"
+  ],
+  "author": "Nathan Wilcox",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/natewilcox/nathan-core.git"
+  },
+  "license": "GPL-3.0",
+  "dependencies": {
+    "phaser": "^3.70.0"
+  }
+}

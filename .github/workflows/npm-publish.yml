@@ -1,0 +1,8 @@
+name: Publish to NPM
+on: [push, pull_request]
+
+jobs:
+  build_and_publish:
+      uses: natewilcox/actions-workflows/.github/workflows/npm-publish.yml@main
+      secrets:
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
