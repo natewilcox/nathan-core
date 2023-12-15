@@ -1,6 +1,6 @@
 {
   "name": "@natewilcox/nathan-core",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Core objects for games built by Nathan",
   "main": "build/main.js",
   "types": "build/main.d.ts",
