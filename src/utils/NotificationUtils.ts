@@ -6,11 +6,14 @@ export async function requestPermissionForNotification() {
     }
 }
 
-export function sendNotification(message: string) {
-    
+export function sendNotification(title: string, body: string) {
+
     if (Notification.permission === "granted" && document.hidden) {
 
-        var notification = new Notification(message);
+        var notification = new Notification(title, {
+            body,
+        });
+
         notification.onclick = function() {
             window.focus();
         };
